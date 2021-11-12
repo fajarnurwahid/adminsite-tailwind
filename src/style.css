@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link-active {
+	@apply bg-blue-600 text-white font-medium
+}
+
+.link-active:hover {
+	@apply bg-blue-600 text-white
+}
+
+.icon-side {
+	 @apply min-w-48 text-center
+}
+
+.dropdown-show {
+	@apply max-h-screen
+}
+
+.side-menu > li > a {
+	@apply transition-all
+}
+
+.side-menu a {
+	@apply text-sm
+}
+
+a.link-active .chevron {
+	@apply transform rotate-90
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.side-collapse {
+	@apply max-w-side-hide
+}
+
+.side-collapse:hover {
+	@apply max-w-side-show
+}
+
+.side-collapse > a:first-child,
+.side-collapse .side-menu {
+	@apply px-2
+}
+
+.side-collapse:hover > a:first-child,
+.side-collapse:hover .side-menu {
+	@apply px-4
+}
+
+.side-collapse .divider {
+	@apply text-center
+}
+
+.side-collapse:hover .divider {
+	@apply text-left
+}
+
+.side-collapse .ads {
+	@apply hidden
+}
+
+.side-collapse + #content {
+	@apply left-16
+}
+
+.side-collapse + #content {
+	@apply w-collapse-side
+}
+
+.profile-show {
+	@apply opacity-100 top-10 visible
+}

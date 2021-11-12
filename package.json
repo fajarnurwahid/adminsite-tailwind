@@ -1,0 +1,17 @@
+{
+  "name": "adminsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss build -i ./src/style.css -o ./public/css/style.css",
+    "dev": "cross-env NODE_ENV=production ./src/style.css -o ./public/css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  }
+}
